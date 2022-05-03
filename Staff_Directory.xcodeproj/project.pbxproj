@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8462BB4C28219A1100681EBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB4B28219A1100681EBD /* AppDelegate.swift */; };
 		8462BB4E28219A1100681EBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB4D28219A1100681EBD /* SceneDelegate.swift */; };
-		8462BB5328219A1200681EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8462BB5128219A1200681EBD /* Main.storyboard */; };
 		8462BB5528219A1300681EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8462BB5428219A1300681EBD /* Assets.xcassets */; };
 		8462BB5828219A1300681EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8462BB5628219A1300681EBD /* LaunchScreen.storyboard */; };
 		8462BB6128219B0100681EBD /* PeoplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB6028219B0100681EBD /* PeoplesViewController.swift */; };
@@ -34,13 +33,35 @@
 		8462BB8B2821A1CF00681EBD /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB8A2821A1CF00681EBD /* ServiceManager.swift */; };
 		8462BB8D2821A1F400681EBD /* Servicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB8C2821A1F400681EBD /* Servicable.swift */; };
 		8462BB8F2821A22700681EBD /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB8E2821A22700681EBD /* ImageDownloader.swift */; };
+		8462BBA12821A79400681EBD /* PeopleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BBA02821A79400681EBD /* PeopleViewModelTests.swift */; };
+		8462BBA92821A88400681EBD /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BBA82821A88400681EBD /* MockNetworkManager.swift */; };
+		8462BBAB2821A8E900681EBD /* RoomsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BBAA2821A8E900681EBD /* RoomsViewModelTests.swift */; };
+		8462BBB42821A9AA00681EBD /* Staff_DirectoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BBB32821A9AA00681EBD /* Staff_DirectoryUITests.swift */; };
+		8462BBBB2821AA1300681EBD /* Staff_DirectoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BBBA2821AA1300681EBD /* Staff_DirectoryUITestsLaunchTests.swift */; };
+		8462BBC32821AF6A00681EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8462BBC22821AF6A00681EBD /* Main.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8462BBA22821A79400681EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8462BB4028219A1100681EBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8462BB4728219A1100681EBD;
+			remoteInfo = Staff_Directory;
+		};
+		8462BBB52821A9AA00681EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8462BB4028219A1100681EBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8462BB4728219A1100681EBD;
+			remoteInfo = Staff_Directory;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8462BB4828219A1100681EBD /* Staff_Directory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Staff_Directory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8462BB4B28219A1100681EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8462BB4D28219A1100681EBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8462BB5228219A1200681EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8462BB5428219A1300681EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8462BB5728219A1300681EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8462BB5928219A1300681EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,10 +87,32 @@
 		8462BB8A2821A1CF00681EBD /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		8462BB8C2821A1F400681EBD /* Servicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servicable.swift; sourceTree = "<group>"; };
 		8462BB8E2821A22700681EBD /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		8462BB9E2821A79400681EBD /* Staff_DirectoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Staff_DirectoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8462BBA02821A79400681EBD /* PeopleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModelTests.swift; sourceTree = "<group>"; };
+		8462BBA82821A88400681EBD /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		8462BBAA2821A8E900681EBD /* RoomsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewModelTests.swift; sourceTree = "<group>"; };
+		8462BBB12821A9AA00681EBD /* Staff_DirectoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Staff_DirectoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8462BBB32821A9AA00681EBD /* Staff_DirectoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff_DirectoryUITests.swift; sourceTree = "<group>"; };
+		8462BBBA2821AA1300681EBD /* Staff_DirectoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff_DirectoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8462BBC22821AF6A00681EBD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8462BB4528219A1100681EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8462BB9B2821A79400681EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8462BBAE2821A9AA00681EBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				8462BB4A28219A1100681EBD /* Staff_Directory */,
+				8462BB9F2821A79400681EBD /* Staff_DirectoryTests */,
+				8462BBB22821A9AA00681EBD /* Staff_DirectoryUITests */,
 				8462BB4928219A1100681EBD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				8462BB4828219A1100681EBD /* Staff_Directory.app */,
+				8462BB9E2821A79400681EBD /* Staff_DirectoryTests.xctest */,
+				8462BBB12821A9AA00681EBD /* Staff_DirectoryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,7 +152,7 @@
 				8462BB5F28219A2600681EBD /* View */,
 				8462BB4B28219A1100681EBD /* AppDelegate.swift */,
 				8462BB4D28219A1100681EBD /* SceneDelegate.swift */,
-				8462BB5128219A1200681EBD /* Main.storyboard */,
+				8462BBC22821AF6A00681EBD /* Main.storyboard */,
 				8462BB5428219A1300681EBD /* Assets.xcassets */,
 				8462BB5628219A1300681EBD /* LaunchScreen.storyboard */,
 				8462BB5928219A1300681EBD /* Info.plist */,
@@ -170,6 +217,41 @@
 			path = ApiService;
 			sourceTree = "<group>";
 		};
+		8462BB9F2821A79400681EBD /* Staff_DirectoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				8462BBAC2821A96700681EBD /* New Group */,
+				8462BBA72821A7B600681EBD /* Json Responses */,
+			);
+			path = Staff_DirectoryTests;
+			sourceTree = "<group>";
+		};
+		8462BBA72821A7B600681EBD /* Json Responses */ = {
+			isa = PBXGroup;
+			children = (
+				8462BBA02821A79400681EBD /* PeopleViewModelTests.swift */,
+				8462BBA82821A88400681EBD /* MockNetworkManager.swift */,
+				8462BBAA2821A8E900681EBD /* RoomsViewModelTests.swift */,
+			);
+			path = "Json Responses";
+			sourceTree = "<group>";
+		};
+		8462BBAC2821A96700681EBD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8462BBB22821A9AA00681EBD /* Staff_DirectoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8462BBB32821A9AA00681EBD /* Staff_DirectoryUITests.swift */,
+				8462BBBA2821AA1300681EBD /* Staff_DirectoryUITestsLaunchTests.swift */,
+			);
+			path = Staff_DirectoryUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +272,42 @@
 			productReference = 8462BB4828219A1100681EBD /* Staff_Directory.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8462BB9D2821A79400681EBD /* Staff_DirectoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8462BBA42821A79400681EBD /* Build configuration list for PBXNativeTarget "Staff_DirectoryTests" */;
+			buildPhases = (
+				8462BB9A2821A79400681EBD /* Sources */,
+				8462BB9B2821A79400681EBD /* Frameworks */,
+				8462BB9C2821A79400681EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8462BBA32821A79400681EBD /* PBXTargetDependency */,
+			);
+			name = Staff_DirectoryTests;
+			productName = Staff_DirectoryTests;
+			productReference = 8462BB9E2821A79400681EBD /* Staff_DirectoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8462BBB02821A9AA00681EBD /* Staff_DirectoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8462BBB72821A9AA00681EBD /* Build configuration list for PBXNativeTarget "Staff_DirectoryUITests" */;
+			buildPhases = (
+				8462BBAD2821A9AA00681EBD /* Sources */,
+				8462BBAE2821A9AA00681EBD /* Frameworks */,
+				8462BBAF2821A9AA00681EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8462BBB62821A9AA00681EBD /* PBXTargetDependency */,
+			);
+			name = Staff_DirectoryUITests;
+			productName = Staff_DirectoryUITests;
+			productReference = 8462BBB12821A9AA00681EBD /* Staff_DirectoryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +320,14 @@
 				TargetAttributes = {
 					8462BB4728219A1100681EBD = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					8462BB9D2821A79400681EBD = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 8462BB4728219A1100681EBD;
+					};
+					8462BBB02821A9AA00681EBD = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 8462BB4728219A1100681EBD;
 					};
 				};
 			};
@@ -219,6 +345,8 @@
 			projectRoot = "";
 			targets = (
 				8462BB4728219A1100681EBD /* Staff_Directory */,
+				8462BB9D2821A79400681EBD /* Staff_DirectoryTests */,
+				8462BBB02821A9AA00681EBD /* Staff_DirectoryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,9 +356,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8462BBC32821AF6A00681EBD /* Main.storyboard in Resources */,
 				8462BB5828219A1300681EBD /* LaunchScreen.storyboard in Resources */,
 				8462BB5528219A1300681EBD /* Assets.xcassets in Resources */,
-				8462BB5328219A1200681EBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8462BB9C2821A79400681EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8462BBAF2821A9AA00681EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,17 +410,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8462BB9A2821A79400681EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8462BBA92821A88400681EBD /* MockNetworkManager.swift in Sources */,
+				8462BBAB2821A8E900681EBD /* RoomsViewModelTests.swift in Sources */,
+				8462BBA12821A79400681EBD /* PeopleViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8462BBAD2821A9AA00681EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8462BBB42821A9AA00681EBD /* Staff_DirectoryUITests.swift in Sources */,
+				8462BBBB2821AA1300681EBD /* Staff_DirectoryUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		8462BB5128219A1200681EBD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8462BB5228219A1200681EBD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		8462BBA32821A79400681EBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8462BB4728219A1100681EBD /* Staff_Directory */;
+			targetProxy = 8462BBA22821A79400681EBD /* PBXContainerItemProxy */;
 		};
+		8462BBB62821A9AA00681EBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8462BB4728219A1100681EBD /* Staff_Directory */;
+			targetProxy = 8462BBB52821A9AA00681EBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		8462BB5628219A1300681EBD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -462,6 +628,74 @@
 			};
 			name = Release;
 		};
+		8462BBA52821A79400681EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enhanceit.Staff-DirectoryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Staff_Directory.app/Staff_Directory";
+			};
+			name = Debug;
+		};
+		8462BBA62821A79400681EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enhanceit.Staff-DirectoryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Staff_Directory.app/Staff_Directory";
+			};
+			name = Release;
+		};
+		8462BBB82821A9AA00681EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enhanceit.Staff-DirectoryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Staff_Directory.app/Staff_Directory";
+			};
+			name = Debug;
+		};
+		8462BBB92821A9AA00681EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enhanceit.Staff-DirectoryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Staff_Directory.app/Staff_Directory";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -479,6 +713,24 @@
 			buildConfigurations = (
 				8462BB5D28219A1300681EBD /* Debug */,
 				8462BB5E28219A1300681EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8462BBA42821A79400681EBD /* Build configuration list for PBXNativeTarget "Staff_DirectoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8462BBA52821A79400681EBD /* Debug */,
+				8462BBA62821A79400681EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8462BBB72821A9AA00681EBD /* Build configuration list for PBXNativeTarget "Staff_DirectoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8462BBB82821A9AA00681EBD /* Debug */,
+				8462BBB92821A9AA00681EBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

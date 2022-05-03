@@ -6,7 +6,7 @@
 //
 import Foundation
 
-struct PeopleResponce: Codable {
+struct PeopleResponse: Codable {
     
     var createdAt: String?
     var firstName: String?
