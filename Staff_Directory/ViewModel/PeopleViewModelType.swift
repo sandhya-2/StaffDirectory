@@ -16,7 +16,7 @@ protocol PeopleViewModelType: AnyObject {
 
 final class PeoplesViewModel: PeopleViewModelType {
    
-    private var peoples:[PeopleResponce] = []
+    private var peoples:[PeopleResponse] = []
 
     var peoplesCount:Int {
         return peoples.count
@@ -31,7 +31,7 @@ final class PeoplesViewModel: PeopleViewModelType {
         
     func fetchPeoples(baseUrl: String, path: String) {
         
-        serviceManager.get(baseUrl, path: path, type: PeopleResponce.self) {[weak self] result in
+        serviceManager.get(baseUrl, path: path, type: PeopleResponse.self) {[weak self] result in
             
             switch result {
             case .success(let peoples) :

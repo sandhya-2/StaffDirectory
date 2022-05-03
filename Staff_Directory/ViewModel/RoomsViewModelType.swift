@@ -1,6 +1,6 @@
 //
 //  RoomsViewModel.swift
-//  StaffsDirectory
+//  Staff_Directory
 //
 //  Created by Sandhya on 02/05/22.
 //
@@ -15,7 +15,7 @@ protocol RoomsViewModelType {
 
 class RoomsViewModel: RoomsViewModelType {
 
-    private var rooms:[RoomsResponce] = []
+    private var rooms:[RoomsResponse] = []
     var roomsCount:Int {
         return rooms.count
     }
@@ -31,7 +31,7 @@ class RoomsViewModel: RoomsViewModelType {
    
     func fetchRooms(baseUrl: String, path: String) {
 
-        serviceManager.get(baseUrl, path: path, type: RoomsResponce.self) {[weak self] result in
+        serviceManager.get(baseUrl, path: path, type: RoomsResponse.self) {[weak self] result in
             
             switch result {
             case .success(let rooms) :
