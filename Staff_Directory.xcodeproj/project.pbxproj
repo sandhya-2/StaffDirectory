@@ -28,6 +28,12 @@
 		8462BB7E2821A05500681EBD /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB7D2821A05500681EBD /* CoordinatorType.swift */; };
 		8462BB802821A07C00681EBD /* PeoplesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB7F2821A07C00681EBD /* PeoplesCoordinator.swift */; };
 		8462BB822821A0B000681EBD /* RoomsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB812821A0B000681EBD /* RoomsCoordinator.swift */; };
+		8462BB852821A12700681EBD /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB842821A12700681EBD /* ServiceError.swift */; };
+		8462BB872821A16600681EBD /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB862821A16600681EBD /* EndPoint.swift */; };
+		8462BB892821A1A800681EBD /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB882821A1A800681EBD /* ImageCacher.swift */; };
+		8462BB8B2821A1CF00681EBD /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB8A2821A1CF00681EBD /* ServiceManager.swift */; };
+		8462BB8D2821A1F400681EBD /* Servicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB8C2821A1F400681EBD /* Servicable.swift */; };
+		8462BB8F2821A22700681EBD /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462BB8E2821A22700681EBD /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +60,12 @@
 		8462BB7D2821A05500681EBD /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
 		8462BB7F2821A07C00681EBD /* PeoplesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesCoordinator.swift; sourceTree = "<group>"; };
 		8462BB812821A0B000681EBD /* RoomsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsCoordinator.swift; sourceTree = "<group>"; };
+		8462BB842821A12700681EBD /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		8462BB862821A16600681EBD /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		8462BB882821A1A800681EBD /* ImageCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacher.swift; sourceTree = "<group>"; };
+		8462BB8A2821A1CF00681EBD /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		8462BB8C2821A1F400681EBD /* Servicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servicable.swift; sourceTree = "<group>"; };
+		8462BB8E2821A22700681EBD /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,7 @@
 		8462BB4A28219A1100681EBD /* Staff_Directory */ = {
 			isa = PBXGroup;
 			children = (
+				8462BB832821A11400681EBD /* ApiService */,
 				8462BB7A28219FD200681EBD /* Coordinator */,
 				8462BB7128219C9B00681EBD /* Model */,
 				8462BB6A28219C0600681EBD /* ViewModel */,
@@ -142,6 +155,19 @@
 				8462BB812821A0B000681EBD /* RoomsCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8462BB832821A11400681EBD /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				8462BB842821A12700681EBD /* ServiceError.swift */,
+				8462BB862821A16600681EBD /* EndPoint.swift */,
+				8462BB882821A1A800681EBD /* ImageCacher.swift */,
+				8462BB8A2821A1CF00681EBD /* ServiceManager.swift */,
+				8462BB8C2821A1F400681EBD /* Servicable.swift */,
+				8462BB8E2821A22700681EBD /* ImageDownloader.swift */,
+			);
+			path = ApiService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,12 +248,18 @@
 				8462BB4C28219A1100681EBD /* AppDelegate.swift in Sources */,
 				8462BB822821A0B000681EBD /* RoomsCoordinator.swift in Sources */,
 				8462BB6E28219C5400681EBD /* PeopleViewModelType.swift in Sources */,
+				8462BB8D2821A1F400681EBD /* Servicable.swift in Sources */,
 				8462BB6528219B7B00681EBD /* RoomsTableViewCell.swift in Sources */,
 				8462BB7E2821A05500681EBD /* CoordinatorType.swift in Sources */,
+				8462BB8F2821A22700681EBD /* ImageDownloader.swift in Sources */,
 				8462BB7928219F2800681EBD /* People.swift in Sources */,
 				8462BB4E28219A1100681EBD /* SceneDelegate.swift in Sources */,
+				8462BB8B2821A1CF00681EBD /* ServiceManager.swift in Sources */,
+				8462BB892821A1A800681EBD /* ImageCacher.swift in Sources */,
 				8462BB6328219B4A00681EBD /* PeopleDetailsViewController.swift in Sources */,
+				8462BB852821A12700681EBD /* ServiceError.swift in Sources */,
 				8462BB6128219B0100681EBD /* PeoplesViewController.swift in Sources */,
+				8462BB872821A16600681EBD /* EndPoint.swift in Sources */,
 				8462BB7028219C8000681EBD /* RoomsViewModelType.swift in Sources */,
 				8462BB6C28219C2A00681EBD /* PeopleDetailsViewModel.swift in Sources */,
 				8462BB7C28219FF600681EBD /* AppCoordinator.swift in Sources */,

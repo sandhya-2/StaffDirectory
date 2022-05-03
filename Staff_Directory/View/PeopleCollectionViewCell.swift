@@ -1,6 +1,6 @@
 //
 //  RoomsCollectionViewCell.swift
-//  StaffsDirectory
+//  Staff_Directory
 //
 //  Created by Sandhya on 02/05/22.
 //

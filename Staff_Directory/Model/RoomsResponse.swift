@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RoomsResponce: Decodable {
+struct RoomsResponse: Decodable {
     var createdAt: String
     var isOccupied: Bool
     var maxOccupancy: Int
