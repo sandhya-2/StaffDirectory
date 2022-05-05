@@ -14,9 +14,9 @@ class RoomsViewModelTests: XCTestCase {
     
     override func setUpWithError() throws {
         let roomViewController = RoomsViewController()
-        let mockNetworkMaanger = MockNetworkManager()
+        let mockNetworkManager = MockNetworkManager()
         
-        roomViewModel = RoomsViewModel(serviceManager: mockNetworkMaanger, delegate: roomViewController)
+        roomViewModel = RoomsViewModel(serviceManager: mockNetworkManager, delegate: roomViewController)
     }
     override func tearDownWithError() throws {
         roomViewModel = nil

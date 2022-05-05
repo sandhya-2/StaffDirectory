@@ -39,17 +39,19 @@ class PeoplesViewController: UIViewController {
     let peopleViewModel:PeopleViewModelType
     let coordinator: PeoplesCoordinatoryType
     
-    init(peopleViewModel:PeopleViewModelType,coordinator: PeoplesCoordinatoryType ) {
+    init?(peopleViewModel:PeopleViewModelType,coordinator: PeoplesCoordinatoryType) {
         self.peopleViewModel = peopleViewModel
         self.coordinator = coordinator
+
+      super.init(nibName:nil, bundle: nil)
         
-        super.init(nibName:nil, bundle: nil)
-        
+
     }
-    
+   
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

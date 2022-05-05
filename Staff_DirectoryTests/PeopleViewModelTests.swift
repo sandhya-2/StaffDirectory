@@ -12,9 +12,9 @@ class PeopleViewModelTests: XCTestCase {
     
     var peopleViewModel: PeoplesViewModel!
     override func setUpWithError() throws {
-        let peoplesViewController = PeoplesViewController()
-        let mockNetworkMaanger = MockNetworkManager()
-        peopleViewModel = PeoplesViewModel( serviceManager: mockNetworkMaanger, delegate: peoplesViewController)
+       
+        let mockNetworkManager = MockNetworkManager()
+        peopleViewModel = PeoplesViewModel( serviceManager: mockNetworkManager)
     }
 
     override func tearDownWithError() throws {

@@ -21,13 +21,12 @@ class PeoplesCoordinator: CoordinatorType, PeoplesCoordinatoryType {
     
     func start() {
             
-         let peopleViewModel = PeoplesViewModel()
-         let peopleVC = PeoplesViewController(peopleViewModel:peopleViewModel, coordinator: self)
-            navController.pushViewController(peopleVC, animated: false)
-            
-            let peoplesTab = UITabBarItem(title: "People", image: UIImage(named: "someImage.png"), selectedImage: UIImage(named: "otherImage.png"))
-            
-            navController.tabBarItem = peoplesTab
+        let peopleViewModel = PeoplesViewModel()
+        guard let peopleVC = PeoplesViewController(peopleViewModel:peopleViewModel, coordinator: self) else { return };         navController.pushViewController(peopleVC, animated: false)
+           
+           let peoplesTab = UITabBarItem(title: "People", image: UIImage(named: "someImage.png"), selectedImage: UIImage(named: "otherImage.png"))
+           
+           navController.tabBarItem = peoplesTab
         }
     
     func navigatToPeopleDetails(people: People) {
